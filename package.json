@@ -2,5 +2,24 @@
   "dependencies": {
     "express": "^4.17.1",
     "rollbar": "^2.24.0"
-  }
+  },
+  "name": "traceability",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/daniel-dodge/traceability.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/daniel-dodge/traceability/issues"
+  },
+  "homepage": "https://github.com/daniel-dodge/traceability#readme",
+  "description": ""
 }
