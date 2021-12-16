@@ -9,13 +9,14 @@ const rollbar = new Rollbar({
 })
 
 const app = express()
-app.use(express.json)
+app.use(express.json())
 
+rollbar.log('hello world')
 app.get('/',(req,res)=>{
     res.sendFile(path.join(__dirname,"/public/index.html"))
+    rollbar.info('html file success')
 })
 
 app.use(rollbar.errorHandler())
-rollbar.log('hello world')
 const port = process.env.PORT || 4545
 app.listen(port, () => console.log(`port ${port} up`))
